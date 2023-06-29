@@ -1,0 +1,72 @@
+*********************************************************************** 00000100
+*                                                                     * 00000200
+*   Copyright (C) 1998-2002 Micro Focus. All Rights Reserved.         * 00000300
+*   This demonstration program is provided for use by users           * 00000400
+*   of Micro Focus products and may be used, modified and             * 00000500
+*   distributed as part of your application provided that             * 00000600
+*   you properly acknowledge the copyright of Micro Focus             * 00000700
+*   in this material.                                                 * 00000800
+*                                                                     * 00000900
+*********************************************************************** 00001000
+MDEMO99 DFHMSD BASE=MAPAREA,                                           -00001100
+               FOLD=UPPER,                                             -00001200
+               LANG=COBOL,                                             -00001300
+               MODE=OUT,                                               -00001400
+               TIOAPFX=YES,                                            -00001500
+               TYPE=&&SYSPARM                                           00001600
+DEMO99A DFHMDI DSATTS=(COLOR,HILIGHT,PS,VALIDN),                       -00001700
+               MAPATTS=(COLOR,HILIGHT,PS,VALIDN),                      -00001800
+               SIZE=(24,80)                                             00001900
+TXT01   DFHMDF ATTRB=(ASKIP,NORM),                                     -00002000
+               COLOR=BLUE,                                             -00002100
+               LENGTH=5,                                               -00002200
+               POS=(1,1),                                              -00002300
+               INITIAL='Scrn:'                                          00002400
+SCRN    DFHMDF ATTRB=(ASKIP,FSET,NORM),                                -00002500
+               COLOR=BLUE,                                             -00002600
+               LENGTH=6,                                               -00002700
+               POS=(1,7),                                              -00002800
+               INITIAL='DEMO99'                                         00002900
+HEAD1   DFHMDF ATTRB=(ASKIP,NORM),                                     -00003000
+               COLOR=YELLOW,                                           -00003100
+               LENGTH=50,                                              -00003200
+               POS=(1,16),                                             -00003300
+               INITIAL=' '                                              00003400
+DATE    DFHMDF ATTRB=(NORM,PROT),                                      -00003500
+               COLOR=BLUE,                                             -00003600
+               LENGTH=11,                                              -00003700
+               POS=(1,68),                                             -00003800
+               INITIAL='dd mmm yyyy'                                    00003900
+TXT02   DFHMDF ATTRB=(ASKIP,FSET,NORM),                                -00004000
+               COLOR=BLUE,                                             -00004100
+               LENGTH=5,                                               -00004200
+               POS=(2,1),                                              -00004300
+               INITIAL='Tran:'                                          00004400
+TRAN    DFHMDF ATTRB=(ASKIP,NORM),                                     -00004500
+               COLOR=BLUE,                                             -00004600
+               LENGTH=4,                                               -00004700
+               POS=(2,7),                                              -00004800
+               INITIAL='????'                                           00004900
+HEAD2   DFHMDF ATTRB=(ASKIP,NORM),                                     -00005000
+               COLOR=YELLOW,                                           -00005100
+               LENGTH=50,                                              -00005200
+               POS=(2,16),                                             -00005300
+               INITIAL=' '                                              00005400
+TIME    DFHMDF ATTRB=(NORM,PROT),                                      -00005500
+               COLOR=BLUE,                                             -00005600
+               LENGTH=8,                                               -00005700
+               POS=(2,71),                                             -00005800
+               INITIAL='hh:mm:ss'                                       00005900
+TXT03   DFHMDF ATTRB=(ASKIP,NORM),                                     -00006000
+               COLOR=YELLOW,                                           -00006100
+               LENGTH=52,                                              -00006200
+               POS=(11,20),                                            -00006300
+               INITIAL='Thank you for using Micro Focus Demonstration s-00006400
+               ystem'                                                   00006500
+TXT04   DFHMDF ATTRB=(ASKIP,NORM),                                     -00006600
+               COLOR=BLUE,                                             -00006700
+               LENGTH=22,                                              -00006800
+               POS=(24,1),                                             -00006900
+               INITIAL='Transaction terminated'                         00007000
+        DFHMSD TYPE=FINAL                                               00007100
+        END                                                             00007200

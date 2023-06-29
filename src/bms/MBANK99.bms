@@ -1,0 +1,78 @@
+*********************************************************************** 00000100
+*                                                                     * 00000200
+*   Copyright (C) 1998-2010 Micro Focus. All Rights Reserved.         * 00000300
+*   This demonstration program is provided for use by users           * 00000400
+*   of Micro Focus products and may be used, modified and             * 00000500
+*   distributed as part of your application provided that             * 00000600
+*   you properly acknowledge the copyright of Micro Focus             * 00000700
+*   in this material.                                                 * 00000800
+*                                                                     * 00000900
+*********************************************************************** 00001000
+MBANK99 DFHMSD BASE=MAPAREA,                                           -00001100
+               LANG=COBOL,                                             -00001200
+               MODE=OUT,                                               -00001300
+               TIOAPFX=YES,                                            -00001400
+               TYPE=&&SYSPARM                                           00001500
+BANK99A DFHMDI DSATTS=(COLOR,HILIGHT,PS,VALIDN),                       -00001600
+               MAPATTS=(COLOR,HILIGHT,PS,VALIDN),                      -00001700
+               SIZE=(24,80)                                             00001800
+TXT01   DFHMDF ATTRB=(ASKIP,NORM),                                     -00001900
+               COLOR=BLUE,                                             -00002000
+               LENGTH=5,                                               -00002100
+               POS=(1,1),                                              -00002200
+               INITIAL='Scrn:'                                          00002300
+SCRN    DFHMDF ATTRB=(ASKIP,NORM),                                     -00002400
+               COLOR=BLUE,                                             -00002500
+               LENGTH=6,                                               -00002600
+               POS=(1,7),                                              -00002700
+               INITIAL='BANK99'                                         00002800
+HEAD1   DFHMDF ATTRB=(ASKIP,NORM),                                     -00002900
+               COLOR=YELLOW,                                           -00003000
+               LENGTH=50,                                              -00003100
+               POS=(1,16),                                             -00003200
+               INITIAL=' '                                              00003300
+DATE    DFHMDF ATTRB=(NORM,PROT),                                      -00003400
+               COLOR=BLUE,                                             -00003500
+               LENGTH=11,                                              -00003600
+               POS=(1,68),                                             -00003700
+               INITIAL='dd mmm yyyy'                                    00003800
+TXT02   DFHMDF ATTRB=(ASKIP,NORM),                                     -00003900
+               COLOR=BLUE,                                             -00004000
+               LENGTH=5,                                               -00004100
+               POS=(2,1),                                              -00004200
+               INITIAL='Tran:'                                          00004300
+TRAN    DFHMDF ATTRB=(ASKIP,NORM),                                     -00004400
+               COLOR=BLUE,                                             -00004500
+               LENGTH=4,                                               -00004600
+               POS=(2,7),                                              -00004700
+               INITIAL='????'                                           00004800
+HEAD2   DFHMDF ATTRB=(ASKIP,NORM),                                     -00004900
+               COLOR=YELLOW,                                           -00005000
+               LENGTH=50,                                              -00005100
+               POS=(2,16),                                             -00005200
+               INITIAL=' '                                              00005300
+TIME    DFHMDF ATTRB=(NORM,PROT),                                      -00005400
+               COLOR=BLUE,                                             -00005500
+               LENGTH=8,                                               -00005600
+               POS=(2,71),                                             -00005700
+               INITIAL='hh:mm:ss'                                       00005800
+TXT03   DFHMDF ATTRB=(ASKIP,NORM),                                     -00005900
+               COLOR=YELLOW,                                           -00006000
+               LENGTH=48,                                              -00006100
+               POS=(11,20),                                            -00006200
+               INITIAL='Thank you for using Micro Focus products.'      00006300
+TXT04   DFHMDF ATTRB=(ASKIP,NORM),                                     -00006400
+               COLOR=BLUE,                                             -00006500
+               LENGTH=22,                                              -00006600
+               POS=(24,1),                                             -00006700
+               INITIAL='Transaction terminated'                         00006800
+VER     DFHMDF ATTRB=(ASKIP,NORM),                                     -00006900
+               COLOR=NEUTRAL,                                          -00007000
+               LENGTH=7,                                               -00007100
+               POS=(24,73),                                            -00007200
+               INITIAL='Rnn.nna'                                        00007300
+        DFHMSD TYPE=FINAL                                               00007400
+*                                                                       00007500
+* $ Version 5.99c sequenced on Wednesday 3 Mar 2011 at 1:00pm           00007600
+*                                                                       00007700
+        END                                                             00007800
