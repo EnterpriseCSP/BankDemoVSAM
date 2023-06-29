@@ -2,7 +2,7 @@
       *   Micro Focus BMS Screen Painter
       *   MapSet Name   MBANK99
       *   Date Created  06/29/2023
-      *   Time Created  08:07:43
+      *   Time Created  10:40:16
 
       *  Output Data For Map BANK99A
          01 BANK99AO REDEFINES MAPAREA.

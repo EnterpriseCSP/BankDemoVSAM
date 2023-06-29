@@ -2,7 +2,7 @@
       *   Micro Focus BMS Screen Painter
       *   MapSet Name   MBANKZZ
       *   Date Created  06/29/2023
-      *   Time Created  08:07:43
+      *   Time Created  10:40:16
 
       *  Input Data For Map BANKZZA
          01 BANKZZAI REDEFINES MAPAREA.
